@@ -6,7 +6,7 @@ Migrate data from old VM to new one
 
 ### Why 
 
-In most case update of Genymotion includes newer VM file, and you'll got a 
+In most case update of [Genymotion](http://www.genymotion.com/) includes newer VM file, and you'll got a 
 warning message telling you that you won't be able to enjoy new featues while 
 running older VM after upgrade. Since there's no way upgrading the older VM 
 to newest version, all you can do is creating a new VM and re-install the 
