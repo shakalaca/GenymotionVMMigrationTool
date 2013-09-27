@@ -1,4 +1,4 @@
-GenymotionVMMigrationTool
+Genymotion VM Migration Tool
 =========================
 
 Migrate data from old VM to new one
