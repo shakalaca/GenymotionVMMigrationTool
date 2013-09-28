@@ -13,13 +13,13 @@ VM_base_path=~/.Genymobile/Genymotion/deployed/
 VM_old_path="$VM_base_path/$1"
 VM_new_path="$VM_base_path/$2"
 
-echo Deattach data disk from new VM
+echo Detach data disk from new VM
 VBoxManage storageattach "$VM_new" --storagectl "IDEController" --port 0 --device 1 --medium none
 
 echo Remove data partition file \(android_data_disk.vmdk\)
 VBoxManage closemedium disk "$VM_new_path/android_data_disk.vmdk" --delete
 
-echo Deattach sdcard disk from new VM
+echo Detach sdcard disk from new VM
 VBoxManage storageattach "$VM_new" --storagectl "IDEController" --port 1 --device 0 --medium none
 if [[ -e "$VM_new_path/sdcard.vdi" ]]; then
   echo Remove sdcard partition file \(sdcard.vdi\)
